@@ -503,7 +503,63 @@
             </li>
         </ul>
         </div>
+        <form action="" class="footer-form" name="subscribe" autocomplete="off">
+        <legend class="footer-group-title">Subscribe</legend>
+        <fieldset class="footer-form-group">
+            <input type="email" name="e-mail" class="footer-form-input" id="footer-email" />
+            <label for="form-input" class="footer-form-label">E-mail</label>
+            <svg class="footer-icon-edit" width="24" height="24">
+                <use href="./images/icons.svg#icon-frame"></use>
+            </svg>
+        </fieldset class="footer-form-group">
+        <button type="submit" class="footer-form-btn">Subscribe</button>
+        </form>
     </div>
     </footer>
+    
+    
+<dialog open>
+    <div class="container">
+        <form action="" class="modal-form" name="modal-bg" autocomplete="off">
+            
+            <legend class="form-title">Leave your contacts and we will call you back</legend>
+            <fieldset class="form-group">
+                <label class="form-label">
+                Name
+                <input type="text" name="name" class="form-input" />
+            </label>
+                <svg class="form-icon-edit" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+            <label class="form-label">
+                Phone
+                <input type="tel" name="name" class="form-input" />
+            </label>
+            <svg class="form-icon-edit" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+            <label class="form-label">
+                Email
+                <input type="email" name="e-mail" class="form-input" />
+            </label>
+            <svg class="form-icon-edit" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+            <label class="form-label">
+                Comment
+                <textarea name="comment" placeholder="Text input" class="textarea-comment"></textarea>
+            </label>
+        </fieldset>
+        <fieldset class="form-group">
+        <label class="privacy-policy">
+            <input type="checkbox" name="accept" value="reading" />
+            I accept the terms and conditions of the Privacy Policy
+        </label>
+        </fieldset>
+        <button class="form-btn" type="submit">Send</button>
+    </form>
+    </div>
+</dialog>
+    
 </body>
 </html>
