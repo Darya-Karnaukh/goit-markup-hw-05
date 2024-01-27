@@ -537,30 +537,33 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
-   
 }
 
 .footer-form {
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 24px;
-    border: none;    
-}
-.footer-form-label {
-    position: absolute;
+    border: none; 
 }
 
+.footer-form-label {
+    background-color: #2E2F42;
+
+}
+
+
 .foooter-form-input {
-    position: relative;
+    background-color: #2E2F42;
     width: 264px;
     height: 40px;
     flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    background-color: transparent;
+    margin: auto;
     font-size: 12px;
-    
     line-height: 2;
     letter-spacing: 0.04em;
     padding-left: 16px;
@@ -583,12 +586,11 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    margin: auto;
     min-width: 165px;
     border: none;
     height: 40px;
     white-space: nowrap;
-    margin-left: 24px;
+    margin: 0;
 }
 
 input::placeholder {
@@ -602,6 +604,8 @@ input::placeholder {
 
 /* ++++++++++++modal bd ++++++++++++*/
 .container-modal-window {
+    margin-left: auto;
+    margin-right: auto;
     position: fixed;
     top: 0;
     width: 100%;
@@ -621,6 +625,7 @@ input::placeholder {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-close {
     position: absolute;
@@ -654,7 +659,6 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 72px;
     padding-bottom: 16px;
     color: #2E2F42;
     text-align: center;
@@ -734,7 +738,7 @@ input::placeholder {
     
 }
 
-.textarea-comment::placeholder:focus {
+.textarea-comment:focus {
     border-color: #4D5AE5;
 }
 
@@ -763,10 +767,12 @@ input::placeholder {
 
 }
 
-.visually-hidden:checked + .privacy-policy {
-    color: #404bbf;
+.visually-hidden:checked + .icon-checkbox {
+    background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
+    background-size: contain;
+    background-origin: border-box;
 }
 
 .privacy-policy {
@@ -777,11 +783,11 @@ input::placeholder {
     display: block;
     min-width: 169px;
     height: 56px;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.04px;
+    letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
     background: #4D5AE5;
