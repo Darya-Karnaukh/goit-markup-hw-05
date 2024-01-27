@@ -532,67 +532,53 @@
                 </svg>
             </button>
             <p class="form-title">Leave your contacts and we will call you back</p>
-
-        <form class="modal-form" name="modal-bg" autocomplete="off">
-            
-            <div class="form-group">
-
-                <label for="user-name" class="form-label">Name</label>
-                <div class="container-input">
-                <input type="text" name="user-name" class="form-input" id="user-name" />
-                <svg class="form-icon-edit" width="18" height="24">
-                <use href="./images/icons.svg#icon-person-black"></use>
-                </svg>
+            <form class="modal-form" name="modal-bg" autocomplete="off">
+                <div class="form-group">
+                    <label for="user-name" class="form-label">Name</label>
+                    <div class="container-input">
+                        <input type="text" name="user-name" class="form-input" id="user-name" />
+                        <svg class="form-icon-edit" width="18" height="24">
+                            <use href="./images/icons.svg#icon-person-black"></use>
+                        </svg>
+                    </div>
                 </div>
-            </div>
-
-            <div class="form-group">
-
-            <label class="form-label">Phone
-            <div class="container-input">
-            <input type="tel" name="name" class="form-input" />
-            <svg class="form-icon-edit" width="18" height="24">
-            <use href="./images/icons.svg#icon-phone-black"></use>
-            </svg>
-            </div>
-            </label>
-            </div> 
-
-            <div class="form-group">
-
-            <label class="form-label">Email
-            <div class="container-input">
-            <input type="email" name="e-mail" class="form-input" />
-            <svg class="form-icon-edit" width="18" height="24">
-            <use href="./images/icons.svg#icon-email-black"></use>
-            </svg>
-            </div>
-            </div>
-
-            <div class="group-comment">
-                <label for="user-comment" class="form-label">Comment</label>
-                <textarea name="user-comment" placeholder="Text input" class="textarea-comment" id="user-comment"></textarea>
-            </div>
-        
-
-        <div class="group-checkbox">
-        
-        
-        <label for="user-privacy" class="accept">
-            <input type="checkbox" class="visually-hidden" name="user-privacy" value="true" id="user-privacy" />
-            <span class="icon-checkbox"> 
-                <svg class="form-icon-checkbox" width="10" height="8">
-            <use href="./images/icons.svg#icon-check-mark"></use>
-        </svg> 
-    </span>
-        I accept the terms and conditions of the <a class="privacy-policy">Privacy Policy</a> 
-
-        </label>
-    </div>
-        <button class="form-btn" type="submit">Send</button>
-    </form>
-    
-    </div>
+                <div class="form-group">
+                    <label for="phone-input" class="form-label">Phone</label>
+                    <div class="container-input">
+                        <input type="tel" name="name" class="form-input" id="phone-input"/>
+                        <svg class="form-icon-edit" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email-input" class="form-label">Email</label>
+                    <div class="container-input">
+                        <input type="email" name="e-mail" class="form-input" id="email-input" />
+                        <svg class="form-icon-edit" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="group-comment">
+                    <label for="user-comment" class="form-label">Comment</label>
+                    <textarea name="user-comment" placeholder="Text input" class="textarea-comment" id="user-comment"></textarea>
+                </div>
+                
+                <div class="group-checkbox">
+                    <input type="checkbox" class="visually-hidden" name="user-privacy" value="true" id="user-privacy" />
+                    <label for="user-privacy" class="accept">
+                        <span class="icon-checkbox">
+                            <svg class="form-icon-checkbox" width="10" height="8">
+                                <use href="./images/icons.svg#icon-check-mark"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the <a class="privacy-policy">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="form-btn" type="submit">Send</button>
+            </form>
+        </div>
     </div>
     
 

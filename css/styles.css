@@ -540,7 +540,6 @@ ul {
 }
 
 .footer-form {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -554,13 +553,14 @@ ul {
 }
 
 
-.foooter-form-input {
+.footer-form-input {
     background-color: #2E2F42;
     width: 264px;
     height: 40px;
     flex-shrink: 0;
     border-radius: 4px;
-    border: 1px solid #FFF;
+    border: 1px solid #ffffff;
+    background-color: transparent;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin: auto;
     font-size: 12px;
@@ -580,7 +580,7 @@ ul {
     background: #4D5AE5;
     color:  #ffffff;
     text-align: center;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -593,7 +593,7 @@ ul {
     margin: 0;
 }
 
-input::placeholder {
+.footer-form-input::placeholder {
     color: #ffffff;
 }
 
@@ -767,7 +767,7 @@ input::placeholder {
 
 }
 
-.visually-hidden:checked + .icon-checkbox {
+.visually-hidden:checked ~ .icon-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
